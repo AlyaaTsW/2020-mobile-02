@@ -1,5 +1,6 @@
 package id.putraprima.marketplacelayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -16,6 +17,11 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.halaman_02_login);
+    }
+
+    public void Register (View view){
+        Intent intent = new Intent(this, Register.class);
+        startActivity(intent);
     }
 
 }

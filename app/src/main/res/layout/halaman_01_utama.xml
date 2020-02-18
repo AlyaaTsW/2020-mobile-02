@@ -84,6 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:onClick="Login"
             android:background="@drawable/btn_white_large"
             android:fontFamily="@font/futura_pt_demibold"
             android:text="Service Provider"

@@ -143,6 +143,8 @@
             android:background="@drawable/btn_red_large"
             android:fontFamily="@font/futura_pt_demibold"
             android:text="Next"
+            android:textColor="#fff"
+            android:onClick="Next"
             android:textAllCaps="false"
             android:textSize="20dp" />
     </LinearLayout>
