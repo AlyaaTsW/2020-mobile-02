@@ -23,13 +23,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/left_arrow"/>
+            android:background="@drawable/left_arrow" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="160dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/logo" />
     </LinearLayout>
 
@@ -39,7 +39,6 @@
         android:layout_height="0dp"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginBottom="6dp"
@@ -55,23 +54,28 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/futura_pt_demibold"
             android:text="Continuing as Service Provider"
-            android:textSize="40sp" />
+            android:textSize="40sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
             android:background="@drawable/btn_white_small"
             android:fontFamily="@font/futura_pt_demibold"
             android:text="Login"
             android:textAllCaps="false"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            tools:layout_editor_absoluteX="0dp" />
+            app:layout_constraintEnd_toStartOf="@+id/button4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="202dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
@@ -86,7 +90,7 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/btn_white_large"
@@ -94,15 +98,18 @@
             android:text="Continue with Google"
             android:textAllCaps="false"
             android:textColor="#FF0000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button" />
 
         <LinearLayout
             android:id="@+id/linearLayout3"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="48dp"
             android:orientation="vertical"
-            app:layout_constraintTop_toTopOf="@+id/button2"
-            tools:layout_editor_absoluteX="-2dp">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button2">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -114,40 +121,44 @@
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:textAllCaps="false"
             android:background="@drawable/btn_blue_large"
             android:fontFamily="@font/futura_pt_demibold"
             android:text="Continue with Facebook"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button2" />
 
         <LinearLayout
             android:id="@+id/linearLayout4"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="48dp"
             android:orientation="vertical"
-            app:layout_constraintTop_toTopOf="@+id/button3"
-            tools:layout_editor_absoluteX="6dp">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button3">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="12dp"
-                android:background="@drawable/fb_logo"
+                android:background="@drawable/fb_logo" />
         </LinearLayout>
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/futura_pt_demibold"
             android:text="Enter as a Guest"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button3"
-            app:layout_goneMarginStart="125dp"
-            tools:layout_editor_absoluteX="118dp" />
+            app:layout_goneMarginStart="125dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="General Info"
         android:textSize="30sp"
@@ -32,7 +32,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="of 5"
@@ -41,31 +41,34 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
+        android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
         android:fontFamily="@font/futura_pt_demibold"
         android:text="1"
         android:textColor="#FF0000"
         android:textSize="30sp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginTop="25dp"
         app:layout_constraintEnd_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:background="@drawable/grey_line_padded"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <LinearLayout
-        android:layout_width="360dp"
+        android:id="@+id/linearLayout6"
+        android:layout_width="320dp"
         android:layout_height="589dp"
+        android:layout_marginTop="15dp"
         android:orientation="vertical"
-        android:layout_marginTop="27dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3">
@@ -73,82 +76,83 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Full Name"
             android:fontFamily="@font/futura_pt_demibold"
-            android:textSize="17sp"/>
+            android:text="Full Name"
+            android:textSize="17sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="22dp"
-            android:text="Jonathan Doe"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/futura_pt_demibold"
-            android:textSize="19sp"
-            android:textColor="#000"/>
+            android:text="Jonathan Doe"
+            android:textColor="#000"
+            android:textSize="19sp" />
 
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/red_line_padded"
+            android:background="@drawable/red_line_padded" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email Address"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/futura_pt_demibold"
-            android:layout_marginTop="22dp"/>
+            android:hint="Email Address" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Mobile Number"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/futura_pt_demibold"
-            android:layout_marginTop="22dp"/>
+            android:hint="Mobile Number" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Country"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/futura_pt_demibold"
-            android:layout_marginTop="22dp"/>
+            android:hint="Country" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/futura_pt_demibold"
-            android:layout_marginTop="22dp"/>
+            android:hint="Password" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Confirm Password"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/futura_pt_demibold"
-            android:layout_marginTop="22dp"/>
+            android:hint="Confirm Password" />
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Referal Code (Optional)"
+            android:layout_marginTop="15dp"
             android:fontFamily="@font/futura_pt_demibold"
-            android:layout_marginTop="22dp"/>
+            android:hint="Referal Code (Optional)" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_red_large"
+            android:fontFamily="@font/futura_pt_demibold"
             android:text="Next"
             android:textAllCaps="false"
-            android:fontFamily="@font/futura_pt_demibold"
-            android:textSize="20dp"
-            android:background="@drawable/btn_red_large"/>
+            android:textSize="20dp" />
     </LinearLayout>
 
     <ImageView
+        android:id="@+id/imageView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="320dp"
         android:layout_marginEnd="47dp"
-        android:layout_marginTop="365dp"
         android:background="@drawable/caret_down"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
